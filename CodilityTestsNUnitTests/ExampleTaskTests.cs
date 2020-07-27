@@ -1,16 +1,10 @@
-using System;
 using NUnit.Framework;
 using CodilityTasks.Tasks;
 
 namespace CodilityTasksNUnitTests
 {
-    public class Tests
+    public class ExampleTaskTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void Example1()
         {

@@ -5,6 +5,23 @@ namespace CodilityTasks.Tasks
 {
     public class ExampleTasks
     {
+        public static int DemoTask()
+        {
+            int[] A = new int[] { 1, 2, 3, 8, 0, -3, 4 };
+            int leastNatural = 1;
+            Array.Sort(A);
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (A[i] < 1)
+                    continue;
+                if (A[i] == leastNatural)
+                    leastNatural++;
+                if (A[i] > leastNatural)
+                    break;
+            }
+            return leastNatural;
+        }
+
         public static int Example1(int[] arr, int x)
         {
             int n = arr.Length;
